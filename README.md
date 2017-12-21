@@ -11,9 +11,13 @@ The standard for NDVD tasks is the [CC_WEB_VIDEO](http://vireo.cs.cityu.edu.hk/w
 
 ## Approach
 The problem is tackled by using a bag-of visual words model for each video. This is done in following phases
-- **Feature Extraction**: Convolution Neural Networks are used to extract features from the video keyframes. Pretrained CNN networks have been proven to work well on many vision tasks such as Classification, Segmentation etc. Here, pretrained weights of AlexNet is used to extract feature vectors. Each video keyframe is forward passed through the intermediate layers of AlexNet to get frame feature vector. Max-pooling is applied on the intermediate feature maps to extract one single value. Each frame is then represented by a feature vector of 1376 dimensions.
+- **Feature Extraction**: 
 
     ![Feature Extraction](https://github.com/Chinmay26/Near-Duplicate-Video-Detection/blob/master/images/ndvd-1.png?raw=true)
+
+Convolution Neural Networks are used to extract features from the video keyframes. Pretrained CNN networks have been proven to work well on many vision tasks such as Classification, Segmentation etc. Here, pretrained weights of AlexNet is used to extract feature vectors. Each video keyframe is forward passed through the intermediate layers of AlexNet to get frame feature vector. Max-pooling is applied on the intermediate feature maps to extract one single value. Each frame is then represented by a feature vector of 1376 dimensions.
+
+    
 
 The video-level feature vector is calculated by summing over the individual video keyframes.
                               
