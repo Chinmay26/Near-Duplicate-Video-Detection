@@ -19,7 +19,10 @@ The video-level feature vector is calculated by summing over the individual vide
                               
 
 - **Visual Codebook Generation**: 
+
+
     ![Kmeans Clustering](https://github.com/Chinmay26/Near-Duplicate-Video-Detection/blob/master/images/NDVD-cluster.png?raw=true)
+    
 
 A visual codebook is generated using the above feature vectors. Online Mini-batch K means is used to generate the codebook clusters. A sample of random 100K frames are used for visual codebook generation. K = 1000 gives best results from experiments. 
 
