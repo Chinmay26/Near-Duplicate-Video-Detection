@@ -41,7 +41,7 @@ For each keyframe in a video, the Nearest cluster is identified to generate a ke
 video similarity is inferred by calculating cosine similarity using tf-idf (term frequency / inverse-document frequency) between the two video histograms. To reduce the number of comparisons, we construct an inverted index to identify the videos which have a common visual word.
 
 ## Results
-Using the above approach for the 24 query videos, the mAP (mean average precision) score was 0.951. The state of art techniques achieve a mAP of 0.98. However, note that the above metric is not very well deined compared to Classification / Segmentation tasks. Defining visually similar videos & ranking them is subject to human decision making and not well defined.
+Using the above approach for the 24 query videos, the mAP (mean average precision) score was 0.951. The state of art techniques achieve a mAP of 0.98. However, note that the above metric is not very well defined compared to Classification / Segmentation tasks. Defining visually similar videos & ranking them is subject to human decision making and not well defined.
 
 ## Future Work
 1. **Scalability**: How can we extend this to handle videos / keyframes of 1M+ videos? K-means clustering suffers from curse of dimensionality.
